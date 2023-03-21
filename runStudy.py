@@ -48,9 +48,9 @@ if __name__ == "__main__":
     C = np.transpose(F) @ F
 
     # case 1
-    case1.runComparison(C, K, G, methodsForErrorComparison)
+    case1.computeComponentWiseErrors(C, K, G, methodsForErrorComparison)
     case1.runStepSizeStudy(C, K, G, methodsForStepSizeStudy, stepsizes)
 
     # case 2
-    case2.runComparison(C, K, G, methodsForErrorComparison)
+    case2.computeComponentWiseErrors(C, K, G, methodsForErrorComparison)
     case2.runStepSizeStudy(C, K, G, methodsForStepSizeStudy, stepsizes)

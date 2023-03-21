@@ -19,7 +19,7 @@ from src.plotters import (
 )
 
 
-def runComparison(C, K, G, methods, writeLatexFiles=False):
+def computeComponentWiseErrors(C, K, G, methods, writeLatexFiles=False):
 
     # compute analytical stress and tangent
     analyticalStress = computeSecondPiolaKirchhoffStress(C, K, G)

@@ -20,7 +20,7 @@ from src.plotters import (
 )
 
 
-def runComparison(C, K, G, methods):
+def computeComponentWiseErrors(C, K, G, methods):
 
     relativeTangentErrors = {}
 
